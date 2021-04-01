@@ -4,11 +4,13 @@ using namespace std;
 
 int main()
 {
-    int idade;
-    float peso;
-    cout << "qual a sua idade e seu peso? " << endl;
-    cin >> idade >> peso;
-    cout << "sua idade eh " << idade << " e seu peso eh " << peso;
-    return 0;
+	int idade;
+	cout << "qual a sua idade?" << endl;
+	cin >> idade;
+	if (idade > 70) {
+		cout << "va se vacinar";
+	}
+	else {
+		cout << "ainda nao pode se vacinar.";
+	}
 }
-
