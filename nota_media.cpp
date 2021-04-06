@@ -4,21 +4,16 @@ using namespace std;
 
 int main()
 {
-	float nota1, nota2, nota3;
-	cout << "quais as suas notas? ";
-	cin >> nota1 >> nota2 >> nota3;
-	float media;
-	media = (nota1 + nota2 + nota3) / 3;
-	if (media < 3) {
-		cout << "ME";
-	}
-	else if (media >= 3 && media < 8) {
-		cout << "ME";
-	}
-	else if (media >= 8) {
-		cout << "MS";
+	float nota1, nota2, media;
+	bool x;
+	cout << "quais foram as suas notas? " << endl;
+	cin >> nota1 >> nota2;
+	media = (nota1 + nota2) / 2;
+	if (media > 5) {
+		cout << "aluno aprovado";
 	}
 	else {
-		cout << "SS";
+		cout << "aluno reprovado";
 	}
 }
+// sem operador ternário, complicado demais.
