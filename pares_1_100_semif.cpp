@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	for (int x = 1; x < 51; x++)
+	for (int x = 0; x < 101; x += 2) {
 		cout << x << endl;
-
+	}
 }
